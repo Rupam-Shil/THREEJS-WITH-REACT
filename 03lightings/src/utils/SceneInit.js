@@ -47,6 +47,7 @@ export default class SceneInit {
 		document.body.appendChild(this.renderer.domElement);
 
 		this.clock = new THREE.Clock();
+		
 		this.controls = new OrbitControls(this.camera, this.renderer.domElement);
 		this.stats = Stats();
 		document.body.appendChild(this.stats.dom);
